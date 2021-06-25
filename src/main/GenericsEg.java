@@ -25,8 +25,12 @@ public class GenericsEg {
         Gen<Integer> integer = new Gen<>(1);
         integer.print();
         System.out.println(integer.getObj());
-        Gen<Double> dbl = new Gen<>(1.5);
+        Gen<? extends Number> dbl = new Gen<>(1.5);
+        myGen(dbl);
         dbl.print();
         System.out.println(dbl.getObj());
+    }
+    public static void myGen(Gen<?> x){
+        System.out.println(x.getObj().toString());
     }
 }
