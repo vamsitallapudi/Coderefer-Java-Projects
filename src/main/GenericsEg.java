@@ -29,6 +29,9 @@ public class GenericsEg {
         myGen(dbl);
         dbl.print();
         System.out.println(dbl.getObj());
+        Gen<? super IllegalArgumentException> x= new Gen<>(new Exception("testing"));
+        x.print();
+        System.out.println(x.getObj());
     }
     public static void myGen(Gen<?> x){
         System.out.println(x.getObj().toString());
