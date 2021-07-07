@@ -1,5 +1,3 @@
-package main;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -56,7 +54,7 @@ public class GenericsEg {
         strings.add("Vamsi");
 
 // Totally legal since you used the raw type and lost all type checking!
-        List<Integer> integers = new LinkedList(strings);
+//        List<Integer> integers = new LinkedList(strings);
     }
     public static void myGen(Gen<?> x){
         System.out.println(x.getObj().toString());

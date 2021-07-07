@@ -1,6 +1,4 @@
-package main;
-
-public interface ITest extends IAnotherTest{
+public interface ITest extends IAnotherTest {
     String xl();
 
     @Override
